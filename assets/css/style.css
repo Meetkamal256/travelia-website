@@ -99,15 +99,11 @@
   #RESET
 \*-----------------------------------*/
 
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
+  list-style: none;
   box-sizing: border-box;
-}
-
-li {
-  style: none;
 }
 
 a,
@@ -223,7 +219,6 @@ body {
     width: 80%;
   }
 }
-
 
 /*-----------------------------------*\
   #HEADER
