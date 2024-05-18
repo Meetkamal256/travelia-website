@@ -6,16 +6,11 @@
  * copyright 2023 codewithsadee
  */
 
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * COLORS
    */
@@ -51,7 +46,7 @@
    */
 
   /* font family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
 
   /* font size */
   --fontSize-1: 4.2rem;
@@ -98,100 +93,121 @@
   --transition-1: 250ms ease;
   --transition-2: 500ms ease;
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+li {
+  style: none;
+}
 
+a,
+img,
+span,
+button {
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: var(--ff-poppins);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-lavender-blush);
+  color: var(--text-granite-gray);
+  font-size: var(--fontSize-6);
+  line-height: 1.8;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #PRELOADER
-\*-----------------------------------*
+\*-----------------------------------*/
 
-
-
-
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backgroud: var(--bg-lavender-blush);
+  display: grid;
+  place-items: center;
+}
 
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #GALLERY
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
