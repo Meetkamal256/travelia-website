@@ -252,6 +252,12 @@ body.nav-active {
   margin-block: 10px;
 }
 
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--bg-gainsboro);
+  overflow: hidden;
+}
+
 /*-----------------------------------*\
   #PRELOADER
 \*------------ -----------------------*/
@@ -556,10 +562,17 @@ body.nav-active {
   margin-block: 10px 5px;
 }
 
-
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
+.desti .section-title {
+  margin-block-end: 40px;
+}
+
+.desti-list {
+  display: grid;
+  gap: 30px;
+}
 
 /*-----------------------------------*\
   #EXPERIENCE
