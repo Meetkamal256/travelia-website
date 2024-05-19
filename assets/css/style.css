@@ -218,16 +218,16 @@ body.nav-active {
   line-height: 1.45;
 }
 
-h1 {
+.h1 {
   font-size: var(--fontSize-1);
   line-height: 1.2;
 }
 
-h2 {
+.h2 {
   font-size: var(--fontSize-2);
 }
 
-h3 {
+.h3 {
   font-size: var(--fontSize-4);
 }
 
