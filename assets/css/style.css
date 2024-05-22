@@ -821,9 +821,45 @@ body.nav-active {
 
 .footer-bottom-link:is(:hover, :focus-visible) {
   text-decoration: underline;
-  
 }
 
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+/* Responsive for larger than 576px screen */
+
+@media (min-width: 575px) {
+  /* REUSED STYLE */
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* HEADER */
+
+  .navbar {
+    right: -350px;
+    width: 350px;
+    background: var(--bg-white);
+    padding-inline: 40px;
+    padding-block-start: 40px;
+  }
+
+  .navbar.active {
+    transform: translateX(-350px);
+  }
+
+  /* HERO */
+
+  .hero-text {
+    max-width: 42ch;
+  }
+  
+  .hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
