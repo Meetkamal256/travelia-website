@@ -890,10 +890,10 @@ body.nav-active {
 
 @media (min-width: 768px) {
   /* Custom property */
-  
+
   :root {
     /* TYPOGRAPHY */
-    
+
     /* FONT SIZE */
     --fontSize-1: 4.8rem;
     --fontSize-2: 4rem;
@@ -902,82 +902,82 @@ body.nav-active {
     --fontSize-5: 2.2rem;
     --fontSize-6: 1.8rem;
     --fontSize-7: 1.6rem;
-    
+
     /* SPACING */
     --section-spacing: 120px;
   }
-  
+
   /* REUSED STYLE */
-  
+
   .container {
     width: 90%;
     margin-inline: auto;
   }
-  
+
   .btn {
     height: 60px;
     padding-inline: 40px;
   }
-  
+
   :is(.desti, .gallery) :is(.section-subtitle, .section-title) {
     text-align: center;
   }
-  
+
   /* PRELOADER */
   .preloader .img {
     width: 80px;
   }
-  
+
   /* HERO */
   .hero {
     padding-block-start: 180px;
   }
-  
+
   .hero-subtitle {
     font-size: var(--fontSize-7);
     padding: 10px 30px;
   }
-  
+
   .hero-btn {
     gap: 32px;
   }
-  
+
   .hero-btn .btn-img {
     width: 80px;
     height: 80px;
   }
-  
+
   .hero-btn ion-icon {
     padding: 12px;
   }
-  
+
   .hero-banner {
     max-width: 550px;
     margin-inline: auto;
   }
-  
+
   /* SERVICE */
   .service .container {
     gap: 35px;
   }
-  
+
   .service-card {
     padding: 40px 30px;
   }
-  
+
   .service-card .card-title {
     margin-block: 20px 10px;
   }
-  
+
   /* DESTINATION */
   .desti .section-title {
     margin-block-end: 65px;
   }
-  
+
   .desti-list {
     gap: 50px 35px;
   }
-  
+
   .desti-card .card-title {
     margin-block-start: 25px;
   }
@@ -991,7 +991,7 @@ body.nav-active {
   .exp .section-text {
     max-width: 600px;
   }
-  
+
   .exp-list {
     display: flex;
     align-items: center;
@@ -1029,23 +1029,23 @@ body.nav-active {
   .cta-card {
     padding: 80px 60px;
   }
-  
+
   .cta .btn {
     margin-block-start: 30px;
   }
-  
+
   /* FOOTER */
-  
+
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .copyright {
     margin-block-end: 0;
   }
@@ -1064,7 +1064,7 @@ body.nav-active {
   .overlay {
     display: none;
   }
-  
+
   .navbar,
   .navbar.active {
     all: unset;
@@ -1072,11 +1072,41 @@ body.nav-active {
     align-items: center;
     flex-grow: 1;
   }
-  
+
   .navbar-list {
     margin-block-start: 0;
     display: flex;
     gap: 30px;
     margin-inline: auto;
+  }
+
+  .navbar-link:is(:hover, :focus-visible, .active) {
+    transform: unset;
+  }
+
+  .navbar-link::before {
+    width: 10px;
+    height: 3px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .header-action {
+    border: none;
+    padding-block-start: 0;
+    gap: 30px;
+  }
+
+  .header.active {
+    padding-block: 15px;
+  }
+
+  /* HERO */
+  .hero .container {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 0;
+    align-items: center;
   }
 }
